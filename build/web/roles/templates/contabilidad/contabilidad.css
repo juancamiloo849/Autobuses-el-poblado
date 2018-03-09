@@ -1,0 +1,272 @@
+@import "bootstrap";
+
+
+/* universal */
+
+main {
+  @extend .container;
+  padding-bottom: 30px;
+  width: 60%;
+  margin-top: 40px; // accommodate the navbar
+
+}
+section {
+  @extend .row;
+  margin-top: 2px;
+  }
+  
+  
+.caja-roles { 
+    float:left;
+    margin-left:1px; 
+    margin-top:5px;
+    
+}  
+  
+  
+  
+/* footer */
+*{
+
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+  background: #f4f6f6;
+  
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #e9ecef;
+ }
+ /*
+
+#Contenedor{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #F3EDED;
+    border: 1px solid #ECE8E8;
+    height: 100px;
+    border-radius:8px;
+    padding: 0px 9px 0px 9px;
+}
+ 
+*/
+.Icon span{
+      background: #A8A6A6;
+      padding: 10px;
+      border-radius: 120px;
+}
+
+
+.Icon{
+  margin-top: 10px;
+  margin-bottom:10px;
+  color: #FFF;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.opcioncontra{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.menu-lateral{
+  top: 20px;
+}
+ 
+
+@media only screen and (max-width:320px){
+#Contenedor{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+ 
+}
+@media only screen and (max-width:240px){
+    
+}
+
+.button_cerrar {
+ border: none;
+ background: #FE2E2E;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+/* position: relative;*/
+ box-sizing: border-box;
+ transition: all 500ms ease;
+ top: 20px;
+ position: absolute;
+ left: 85%;
+}
+
+/*botones*/
+
+.botones{
+  border: none;
+ background: #848484;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+/* position: relative;*/
+ box-sizing: border-box;
+ transition: all 500ms ease;
+
+ position: absolute;
+ 
+}
+
+
+/* estilos menu lateral */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 52px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 60;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu-lateral{
+  color: #f1f1f1;
+}
+
+/* ----------------------------------------------------------------------------*/
+
+/* --------------------------------------------------------- */
+
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+color: red;
+background-color: transparent;
+}
+
+/* paginacion ------------------------------------------ */
+
+.apple_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+  top:60%;
+     
+    
+}
+  
+  .apple_pagination a, .apple_pagination span {
+    padding: 0.2em 0.3em; 
+      
+  }
+  .apple_pagination .disabled {
+    color: #aaaaaa; 
+      
+  }
+  .apple_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #bebebe;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+   .apple_pagination a {
+    text-decoration: none;
+    color: black; }
+    .apple_pagination a:hover, .apple_pagination a:focus {
+     text-decoration: underline;
+      
+      
+     }
+
+
+/* Estilos*/
+
+#ayuda-ocultar iframe,
+#ayuda-ocultare object,
+#ayuda-ocultar embed {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  border: 0;
+  padding: 55px;
+}
+
+#inicio-ocultar iframe,
+#inicio-ocultare object,
+#inicio-ocultar embed {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  width: 70%;
+  height: 60%;
+  border: 0;
+  padding: 55px;
+}
+
+#nosotros-ocultar iframe,
+#nosotros-ocultare object,
+#nosotros-ocultar embed {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  border: 0;
+  padding: 55px;
+}

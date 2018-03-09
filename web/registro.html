@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
+    <script src="registro.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="active"><img src="images/imagen.jpg" width="150" height="100"></li><br><br>
+          <h4><strong>AUTOBUSES EL POBLADO LAURELES S.A</strong></h4>
+        </ul>
+        <br>
+  
+      </div>
+
+    <section>
+       <div id="Contenedor">
+         <div class="Icon">
+             <span class="glyphicon glyphicon-user"></span>
+                 </div>
+            <div class="ContentForm">
+             
+             <form action="" method="post" name="FormEntrar">
+                 <label>Nombre</label>
+                 <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1">
+                  <i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" class="form-control" name="Nombre" placeholder="Usuario" id="usuario">
+                </div>               
+
+
+                <label>Cedula</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-info-sign"></i></span>
+                  <input type="text" class="form-control" name="Cedula" placeholder="Cedula" id="cedula" aria-describedby="sizing-addon1" required>
+                </div>
+
+                <label>Celular</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-phone"></i></span>
+                  <input type="text" class="form-control" name="Celular" placeholder="Celular" id="celular" aria-describedby="sizing-addon1" required>
+                </div>
+
+                <label>Correo</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input type="imail" class="form-control" name="Correo" placeholder="Correo" id="correo" aria-describedby="sizing-addon1" required>
+                </div>
+
+                <label>Dirección</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-road"></i></span>
+                  <input type="text" class="form-control" name="Direccion" placeholder="Dirección" id="direccion" aria-describedby="sizing-addon1" required>
+                </div><br>
+
+                <div class="form-group-lg">
+                <select class="form-control" id="sizing-addon1">
+                    <option value="" disabled="" selected="">Rol</option>
+                    <option value="Secretaria">Secretaria</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Conductor">Despachador</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Facturador">Facturación</option>
+                    <option value="Supervisor">Coordinador de mantenimiento</option>
+                </select>
+                </div>
+
+                <br>
+                <label>Contraseña</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                  <input type="password" name="contraseña" class="form-control" placeholder="********" id="contrasenna" aria-describedby="sizing-addon1" required>
+                </div>
+
+                <label>Confirmar Contraseña</label>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                  <input type="password" name="confiContraseña" class="form-control" placeholder="********" id="confirmarContrasenna" aria-describedby="sizing-addon1" required>
+                </div>
+                <br>
+
+                <input type="button" class="btn btn-lg btn-danger btn-block btn-signin" value="Registrar" id="IngresoLog" onclick="registrar()"></input>
+              <div class="text-center">
+                  <a class="d-block small btn btn-danger-md" href="roles/templates/administrador/admin.html"><i class="glyphicon glyphicon-home"></i> Home</a>
+                </div>
+             </form>
+            </div> 
+         </div>    
+        <div> 
+    </section>   
+    <div><center>
+      
+      <!--<table style="width:400px;" id="usuarios">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <th>Direccion</th>
+                </thead>
+                <tr>
+                </tr>
+
+                </tr>
+            </table>
+        </div>
+
+    </center>-->
+            
+    
+     
+</body>
+
+ <script src="js/registro.js" charset="utf-8"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
+

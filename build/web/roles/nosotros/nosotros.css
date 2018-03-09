@@ -1,0 +1,13 @@
+body{
+    background: #f4f6f6;
+}
+
+.ordenar { 
+    float:left;
+    margin-left:5px; 
+    margin-top:5px;
+    
+}  
+  
+.btn {background-color: #e7e7e7; color: black;} /* Gray */ 
+.btn:hover {background: #ddd;}
