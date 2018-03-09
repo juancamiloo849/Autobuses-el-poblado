@@ -16,7 +16,7 @@
     <body>
         <div class="container">
             <center><h1>Formulario de Registro!</h1></center>
-        <form action="#" method="GET">
+        <form action="Insertar" method="POST">
             <div class="form-group col-sm-6">
             <label for="id">Id:</label>
             <input type="text" id="id" name="id" placeholder="ingrese el Id" class="form-control"/><br>

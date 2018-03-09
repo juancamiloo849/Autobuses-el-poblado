@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Javascript CRUD</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <head>
+        <title>Javascript CRUD</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <!-- Librería Google Fonts: Tipografía del sitio web -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Librería Google Fonts: Tipografía del sitio web -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <!-- Librerías Bootstrap: Estilos externos del sitio web -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!--CDN Bootstrap-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- Librerías Bootstrap: Estilos externos del sitio web -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--CDN Bootstrap-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!-- Estilos del sitio web -->
-    <link rel="stylesheet" href="registro.css" />
-    <link rel="stylesheet" href="modal.css" />
+        <!-- Estilos del sitio web -->
+        <link rel="stylesheet" href="registro.css" />
+        <link rel="stylesheet" href="modal.css" />
 
-    <!-- Funciones Javascript -->
-    <script type="text/javascript" src="editar.js"></script>
-</head>
-<body>
-      
-      <div class="page-header">
-          <h3><span class="glyphicon glyphicon-edit"></span> Editar conductor</h3>
-      </div>
+        <!-- Funciones Javascript -->
+        <script type="text/javascript" src="editar.js"></script>
+    </head>
+    <body>
 
-          <!--Tabla con la lista de datos-->
-          <div id="ocultar">
+        <div class="page-header">
+            <h3><span class="glyphicon glyphicon-edit"></span> Editar conductor</h3>
+        </div>
+
+        <!--Tabla con la lista de datos-->
+        <div id="ocultar">
             <div class="container">
                 <table id="tblList" class="table table-bordered"></table>
             </div>
-          </div>
+        </div>
 
-      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
 
-                  <!-- Cabecera -->
-                  <div class="page-header">
-                      <h5> <span class="glyphicon glyphicon-edit"></span> Editar conductor</h5>
-                  </div>
-
-
-                  <!--Formulario de entrada de datos-->
-                  <div class="container">
-                      <form id="frmPerson" class="form-horizontal">
-
-                          <div class="form-group">
-                              <label for="txtName" class="col-lg-2 control-label">Nombre</label>
-                              <div class="col-sm-4">
-                                  <input type="text" id="txtName" class="form-control" placeholder="Nombre">
-                              </div>
-                          </div>
-
-                          <div class="form-group">
-                              <label for="txtID" class="col-sm-2 control-label">Apellidos</label>
-                              <div class="col-sm-4">
-                                  <input type="text" id="txtApellido" class="form-control" placeholder="Apellidos">
-                              </div>
-                          </div>
-
-                          <div class="form-group">
-                              <label for="txtID" class="col-sm-2 control-label">Cedula</label>
-                              <div class="col-sm-4">
-                                  <input type="text" id="txtCedula" class="form-control" placeholder="Cedula">
-                              </div>
-                          </div>
+            <!-- Cabecera -->
+            <div class="page-header">
+                <h5> <span class="glyphicon glyphicon-edit"></span> Editar conductor</h5>
+            </div>
 
 
-                          <div class="form-group">
-                              <label for="txtPhone" class="col-lg-2 control-label">Teléfono</label>
-                              <div class="col-sm-4">
-                                  <input type="text" id="txtPhone" class="form-control" placeholder="Teléfono">
-                              </div>
-                          </div>
+            <!--Formulario de entrada de datos-->
+            <div class="container">
+                <form id="frmPerson" class="form-horizontal">
 
-                          <div class="form-group">
-                              <label for="txtEmail" class="col-lg-2 control-label">Email</label>
-                              <div class="col-sm-4">
-                                  <input type="email" id="txtEmail" class="form-control" placeholder="Email">
-                              </div>
-                          </div>
+                    <div class="form-group">
+                        <label for="txtName" class="col-lg-2 control-label">Nombre</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtName" class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
 
-                          <div class="form-group">
-                              <label for="txtID" class="col-sm-2 control-label">Labor</label>
-                              <div class="col-sm-4">
-                                  <input type="text" id="txtLabor" class="form-control" placeholder="Labor">
-                              </div>
-                          </div>
+                    <div class="form-group">
+                        <label for="txtID" class="col-sm-2 control-label">Apellidos</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtApellido" class="form-control" placeholder="Apellidos">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtID" class="col-sm-2 control-label">Cedula</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtCedula" class="form-control" placeholder="Cedula">
+                        </div>
+                    </div>
 
 
-                          <div class="form-group">
-                              <div class="col-lg-offset-2 col-sm-4">
-                                  <input type="submit" value="Insertar" id="btnSave" class="btn btn-success"/>
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <div class="col-lg-offset-2 col-sm-4">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" class="btn btn-default"> Salir</a>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
+                    <div class="form-group">
+                        <label for="txtPhone" class="col-lg-2 control-label">Teléfono</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtPhone" class="form-control" placeholder="Teléfono">
+                        </div>
+                    </div>
 
-</body>
+                    <div class="form-group">
+                        <label for="txtEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-sm-4">
+                            <input type="email" id="txtEmail" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtID" class="col-sm-2 control-label">Labor</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="txtLabor" class="form-control" placeholder="Labor">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-sm-4">
+                            <input type="submit" value="Insertar" id="btnSave" class="btn btn-success"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-sm-4">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" class="btn btn-default"> Salir</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
 </html>
