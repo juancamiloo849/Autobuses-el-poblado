@@ -9,6 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+        <link href="../../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">      
+        <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
         <title>JSP Page</title>
     </head>
     <body>
@@ -16,7 +20,11 @@
          <h1>Hello World!</h1>
         
         <%@include file="RegisConductor.jsp" %>
+ 
+     
         
+        <a href="Usuarios/crea.jsp">Usuarios</a>
+
         
         
         
