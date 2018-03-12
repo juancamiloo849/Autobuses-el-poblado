@@ -9,16 +9,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-         <h1>Hello World!</h1>
+        <menu>
+          <%@include file="layouts.jsp" %>  
+        </menu>
+        
         
         <%@include file="RegisConductor.jsp" %>
         
-        
-        
-        
     </body>
+    
+     <!-- KICKSTART -->
 </html>
